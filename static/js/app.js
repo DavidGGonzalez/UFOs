@@ -19,4 +19,28 @@ function buildTable(data) {
             cell.text(val);
         });
     });
-}
+};
+
+// Create a function that listen for the click event
+function handleClick() {
+    let date = d3.select("#datetime").property("value");
+
+    // Set the defaul filter
+    let filteredData = tableData;
+
+    // If date was entered, the function will filter the data
+    if (date) {
+        filteredData = filteredData.filter(row => row.datatime === date);
+    };
+
+    // Build the table by calling the buildTable function and passing the filteredData as a parameter
+    buildTable(filteredData);
+};
+
+// Add a listener to the filter button click
+d3.selectAll("#fileter-btn").on("click", handleClick);
+
+// Build table when the page load
+buildTable(tableData);
+
+
