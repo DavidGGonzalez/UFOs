@@ -23,6 +23,7 @@ function buildTable(data) {
 
 // Create a function that listen for the click event
 function handleClick() {
+    // Get value from the datetime input object
     let date = d3.select("#datetime").property("value");
 
     // Set the defaul filter
@@ -30,7 +31,7 @@ function handleClick() {
 
     // If date was entered, the function will filter the data
     if (date) {
-        filteredData = filteredData.filter(row => row.datatime === date);
+        filteredData = filteredData.filter(row => row.datetime === date);
     };
 
     // Build the table by calling the buildTable function and passing the filteredData as a parameter
@@ -38,7 +39,7 @@ function handleClick() {
 };
 
 // Add a listener to the filter button click
-d3.selectAll("#fileter-btn").on("click", handleClick);
+d3.selectAll("#filter-btn").on("click", handleClick);
 
 // Build table when the page load
 buildTable(tableData);
