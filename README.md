@@ -14,7 +14,10 @@ After completing phase one of Dana's website, she wanted to provide a more in-de
   - Visual Code 1.62.3
 
 ## Results
-Data set is too big, therefore, Dana deicided to add filters to allow users to only see data matching their search criteria, in combination with a new JavaScript function that take the criteria, fetch the data and returns a dataset with just those records matching the  
+Data set is too big, therefore, Dana deicided to add filters to allow users to only see data matching their search criteria, in combination with a new JavaScript function that take the criteria, fetch the data and returns a dataset with just those records matching the
+
+## GitHub Page
+You can visit final page by clicking here: [UFOs Site](https://davidggonzalez.github.io/UFOs/)
 
 ![Final Web page](/Resources/FinalPage.png)
 
